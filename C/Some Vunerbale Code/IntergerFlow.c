@@ -1,10 +1,11 @@
 #include<stdio.h>
-
+#include<limits.h>
 
 
 int main(){
 	//Integer Overflow demo 
-	unsigned int max_val = 2147483647;
+	//the INT_MAX const represents the max value that can be stored in the int placeholder !
+	unsigned int max_val = INT_MAX;
 	int overflow = max_val+1;
 	printf("Original value: %d\tOverflow value: %d\n\n",max_val,overflow);
 	
